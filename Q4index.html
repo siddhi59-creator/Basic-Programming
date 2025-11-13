@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TechWave Innovations</title>
+
+  <style>
+    /* ===== Reset & Universal Selector ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: floralwhite;
+      color: rgb(25, 20, 20);
+      line-height: 1.5;
+    }
+
+    /* ===== Navigation Bar ===== */
+    nav {
+      background-color: rgb(26, 23, 23);
+      color: white;
+      padding: 15px 0;
+      text-align: center;
+    }
+
+    /* --- Child Combinator --- */
+    nav > ul > li {
+      display: inline;
+      margin-right: 15px;
+      border-bottom: 2px solid lightpink;
+      padding: 4px 8px;
+      list-style: none;
+    }
+
+    nav > ul > li:last-child {
+      margin-right: 0;
+    }
+
+    /* Style navigation links */
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00b4d8;
+    }
+
+    /* --- Adjacent Sibling Combinator --- */
+    nav + h2 {
+      color: rgb(142, 142, 169);
+      font-size: 24px;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    /* ===== Main Content ===== */
+    main {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: wheat;
+      border-radius: 10px;
+      border: 2px solid white;
+    }
+
+    main h2 {
+      color: #023e8a;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    article {
+      border: 1px solid bisque;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px 0;
+      background-color: white;
+    }
+
+    article h3 {
+      color: darkblue;
+      margin-bottom: 10px;
+    }
+
+    /* --- Descendant Combinator --- */
+    main p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #444;
+    }
+
+    /* --- General Sibling Combinator --- */
+    article h3 ~ p {
+      font-style: italic;
+      color: #666;
+    }
+
+    /* ===== Sidebar ===== */
+    aside {
+      max-width: 900px;
+      margin: 0 auto 20px;
+      background-color: #e3f2fd;
+      border: 2px solid brown;
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+    aside h2 {
+      color: rgb(191, 154, 85);
+      margin-bottom: 10px;
+    }
+
+    aside ul li {
+      margin: 8px 0;
+      color: darkblue;
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      border-top: 3px solid #00b4d8;
+    }
+
+    footer p {
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ===== Navigation Bar ===== -->
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== Adjacent Sibling Heading ===== -->
+  <h2>Welcome to TechWave Innovations</h2>
+
+  <!-- ===== Main Content ===== -->
+  <main>
+    <h2>Our Expertise</h2>
+
+    <article>
+      <h3>AI & Automation</h3>
+      <p>We help businesses streamline operations with intelligent automation solutions.</p>
+      <p>Our AI models are trained for precision, performance, and scalability.</p>
+    </article>
+
+    <article>
+      <h3>Cloud Integration</h3>
+      <p>Seamless cloud migration and integration for modern enterprises.</p>
+      <p>We ensure high availability and secure access across all digital platforms.</p>
+    </article>
+  </main>
+
+  <!-- ===== Sidebar ===== -->
+  <aside>
+    <h2>Recent Posts</h2>
+    <ul>
+      <li>5 AI Trends Revolutionizing 2025</li>
+      <li>How Cloud Computing Boosts Security</li>
+      <li>The Future of Tech Sustainability</li>
+    </ul>
+  </aside>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <p>© 2025 TechWave Innovations. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
