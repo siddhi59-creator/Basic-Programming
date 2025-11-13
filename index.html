@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BeBlog Navbar</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background-color: #0a0a0f;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #0a0a0f;
+      padding: 20px 60px;
+      border-bottom: 1px solid #1c1c1c;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: 600;
+    }
+
+    .logo .be {
+      color: #1e90ff;
+    }
+
+    .logo .blog {
+      color: #ffffff;
+      font-weight: 300;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 40px;
+    }
+
+    .nav-links li a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links li a:hover {
+      color: #1e90ff;
+    }
+
+    .nav-links .buy {
+      color: #1e90ff;
+      font-weight: 500;
+    }
+
+    /* Optional: Make it look centered and neat on smaller screens */
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        padding: 20px;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        margin-top: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <span class="be">Be</span><span class="blog">blog</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Web design</a></li>
+      <li><a href="#">WordPress</a></li>
+      <li><a href="#">About us</a></li>
+      <li><a href="#">BeAdvice</a></li>
+      <li><a href="#" class="buy">Buy BeTheme</a></li>
+    </ul>
+  </nav>
+</body>
+</html>
