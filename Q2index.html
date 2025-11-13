@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html 
+<head>
+  
+  <title>Enid Brand Studio</title>
+
+  <style>
+    /* ===== Universal Selector ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Georgia', serif;
+    }
+
+    /* ===== Body Styling ===== */
+    body {
+      background-color: #f1ede5;
+      color: #2d2d2d;
+      line-height: 1.6;
+    }
+
+    /* ===== Grouping Selector ===== */
+    h1, h2, h3, p {
+      margin-bottom: 10px;
+    }
+
+    /* ===== Section Box Model ===== */
+    section {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      padding: 60px 80px;
+    }
+
+    /* ===== ID Selector for Hero Section ===== */
+    #hero {
+      background: linear-gradient(to bottom, #e3d9cb 0%, #e3d9cb 60%, #4a695d 60%);
+    }
+
+    /* ===== Class Selectors ===== */
+    .section-title {
+      font-size: 1rem;
+      letter-spacing: 1px;
+      color: #7b766e;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+
+    .headline {
+      font-size: 2rem;
+      font-weight: 400;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .highlight {
+      font-weight: 600;
+      color: #2c4f44;
+    }
+
+    /* ===== Second Section (Green Background) ===== */
+    .values {
+      background-color: #4a695d;
+      color: #f1ede5;
+    }
+
+    .values .headline {
+      color: #f1ede5;
+    }
+
+    .values .highlight {
+      color: #ffffff;
+    }
+
+    /* ===== Third Section ===== */
+    .notes {
+      background-color: #f1ede5;
+    }
+
+    /* ===== Pseudo-Class Selector ===== */
+    .headline:hover {
+      color: #1d3d33;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+
+    /* ===== Responsive Layout ===== */
+    @media (max-width: 768px) {
+      section {
+        padding: 40px 30px;
+      }
+      .headline {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ===== Section 1 ===== -->
+  <section id="hero">
+    <h3 class="section-title">Everyone needs infinite dreams</h3>
+    <h1 class="headline">
+      <span class="highlight">Enid</span> is an <span class="highlight">amplification studio</span> that builds brands that <span class="highlight">resound.</span>
+    </h1>
+  </section>
+
+  <!-- ===== Section 2 ===== -->
+  <section class="values">
+    <h3 class="section-title">Each new idea defined</h3>
+    <h1 class="headline">
+      We stand firm on <span class="highlight">our values</span> that sit central to <span class="highlight">everything we do.</span>
+    </h1>
+  </section>
+
+  <!-- ===== Section 3 ===== -->
+  <section class="notes">
+    <h3 class="section-title">Every note is distinct</h3>
+    <h1 class="headline">
+      We <span class="highlight">deep-dive</span> into your back catalogue to understand the <span class="highlight">beat.</span>
+    </h1>
+  </section>
+</body>
+</html>
